@@ -1,8 +1,11 @@
 # 누트컴퍼니 코딩 과제
 
 Language  : Typescript
+
 Framework : Nest.js
+
 Database  : MySQL
+
 Library   : TypeORM
 
 
