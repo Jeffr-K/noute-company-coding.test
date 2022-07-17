@@ -1,12 +1,6 @@
-import {
-  Column,
-  CreateDateColumn,
-  Entity, ManyToOne,
-  PrimaryGeneratedColumn,
-  UpdateDateColumn
-} from 'typeorm';
-import { User } from '../../user/user.entity';
-import { Category } from '../category/category.entity';
+import { Column, CreateDateColumn, Entity, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
+import { User } from '../../../user/domain/user.entity';
+import { Category } from '../../category/domain/category.entity';
 
 @Entity()
 export class Product {

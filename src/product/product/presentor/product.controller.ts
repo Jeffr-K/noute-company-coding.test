@@ -1,12 +1,10 @@
-import { Body, Controller, Get, HttpCode, Inject, Post, Put, Query } from "@nestjs/common";
+import { Body, Controller, Get, HttpCode, Inject, Post, Put, Query } from '@nestjs/common';
 import { CreateProductDto } from './create-product.dto';
-import { ProductService } from './product.service';
+import { ProductService } from '../application/product.service';
 
 @Controller('product')
 export class ProductController {
-  constructor(
-    @Inject(ProductService) private readonly productService: ProductService,
-  ) {}
+  constructor(@Inject(ProductService) private readonly productService: ProductService) {}
 
   @Post()
   @HttpCode(204)
@@ -39,5 +37,4 @@ export class ProductController {
       console.log(e);
     }
   }
-
 }

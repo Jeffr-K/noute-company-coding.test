@@ -1,9 +1,8 @@
-import { createQueryBuilder, EntityRepository, Repository } from "typeorm";
-import { Order } from "./order.entity";
+import { createQueryBuilder, EntityRepository, Repository } from 'typeorm';
+import { Order } from '../domain/order.entity';
 
 @EntityRepository(Order)
 export class OrderRepository extends Repository<Order> {
-
   // TODO: 판매된 상품들 중 여성 회원에게 판매된 횟수가 가장 많은 상품의 이름을 조회
   async findOneBestSellingProduct() {
     return await createQueryBuilder()

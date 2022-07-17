@@ -1,9 +1,9 @@
-import { CreateProductDto } from './create-product.dto';
+import { CreateProductDto } from '../presentor/create-product.dto';
 import { Injectable } from '@nestjs/common';
-import { InjectRepository } from "@nestjs/typeorm";
-import { ProductRepository } from "./product.repository";
-import { Product } from "./product.entity";
-import { CategoryRepository } from "../category/category.repository";
+import { InjectRepository } from '@nestjs/typeorm';
+import { ProductRepository } from '../infrastructure/product.repository';
+import { Product } from '../domain/product.entity';
+import { CategoryRepository } from '../../category/infrastructure/category.repository';
 
 @Injectable()
 export class ProductService {
@@ -41,6 +41,4 @@ export class ProductService {
       console.log(e);
     }
   }
-
-
 }

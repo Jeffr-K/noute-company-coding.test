@@ -1,12 +1,6 @@
-import {
-  Column,
-  CreateDateColumn,
-  Entity, OneToMany,
-  PrimaryGeneratedColumn,
-  UpdateDateColumn
-} from "typeorm";
-import { Product } from "../product/product/product.entity";
-import { Order } from "../order/order.entity";
+import { Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
+import { Product } from '../../product/product/domain/product.entity';
+import { Order } from '../../order/domain/order.entity';
 
 @Entity()
 export class User {

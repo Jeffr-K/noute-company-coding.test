@@ -1,11 +1,5 @@
-import {
-  Column,
-  CreateDateColumn,
-  Entity, OneToMany,
-  PrimaryGeneratedColumn,
-  UpdateDateColumn
-} from "typeorm";
-import { Product } from "../product/product.entity";
+import { Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
+import { Product } from '../../product/domain/product.entity';
 
 @Entity()
 export class Category {

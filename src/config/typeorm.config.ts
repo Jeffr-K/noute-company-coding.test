@@ -13,5 +13,5 @@ export const typeormConfig: TypeOrmModuleOptions = {
   logging: true,
   extra: { ssl: { rejectUnauthorized: false } },
   entities: [__dirname + '/../**/*.entity{.ts,.js}'],
-  autoLoadEntities: true,
+  autoLoadEntities: true
 };
