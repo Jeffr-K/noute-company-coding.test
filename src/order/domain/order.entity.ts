@@ -18,4 +18,7 @@ export class Order {
 
   @ManyToOne(() => User, (user) => user.order)
   user: User;
+
+  @Column()
+  userId: number;
 }
