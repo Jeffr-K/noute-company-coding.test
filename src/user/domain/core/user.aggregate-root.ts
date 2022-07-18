@@ -38,7 +38,7 @@ export class User extends AggregateRoot {
       email: this.email,
       address: this.address,
       gender: this.gender
-    }
+    };
     const user = new User(data);
     return user;
     // mapper 를 활용해 Core domain -> entity model 로 변환 후, 이를 save 로직으로. 하지만 mapper 의 구현을 생각하지 못했습니다..
